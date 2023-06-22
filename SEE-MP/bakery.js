@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function getOutput() {
-    var outputFormat = "";
+    var outputFormat = "Please enter the details";
 
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
