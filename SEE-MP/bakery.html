@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabbel Chocolates</title>
     <link rel="stylesheet" href="./bakery.css">
+    <script src="./bakery.js"></script>
 </head>
 <body>
     <h3>Fabbel Collections</h3>
@@ -17,95 +18,95 @@
                 <li><a href="about.php">About Us</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
             </ul>
+        </nav>
     </header>
-        <div id="mainDiv">
-            <div id="box-modals">
+    <div id="mainDiv">
+        <div id="box-modals">
 
-                <div id="Content">
-                    <!--
-                        This content is a placeholder for the bakery page.
-                        It will have all the info about the bakery and history
-                        of the bakery
-                    -->
-                    <p id="allLabels">Content</p>
-                </div>
-        
-                <div id="Video">
-                    <!--
-                        This content is a placeholder for the video.
-                        It will have a video of the bakery and the process
-                        of making the chocolates
-                    -->
-                    <p id="allLabels">Video</p>
-                </div>
-        
-                <div id="Audio">
-                    <!--
-                        This content is a placeholder for the audio.
-                        It will have a audio of the bakery and the process
-                        of making the chocolates
-                    -->
-                    <p id="allLabels">Audio</p>
-                </div>
-        
-                </div>
-        
-                <div id="form-box-modal">                
-                        <form id="form-content">
-        
-                            <div id="basicLabels">
-                                <label for="name" id="labels">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Enter Your Name Here"> <br>
-            
-                                <label for="email" id="labels">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Email address"><br>
-            
-                                <label for="number" id="labels">Number</label>
-                                <input type="number" id="number" name="number" placeholder="Mobile Number"><br>
-                            
-                            </div>
-        
-                            <div id="dropdown">
-                                <label for="cars" id="cityLabel">Choose city</label>
-                                <select name="city" id="city">
-                                <option value="Bangalore">Bangalore</option>
-                                <option value="Mumbai">Mumbai</option>
-                                <option value="Delhi">Delhi</option>
-                                <option value="Hyderabad">Hyderabad</option>
-                              </select> 
-                            </div>
-                            
-                            <div id="radioButtons">
-                                <br><label for="radioButton" id="locationLabels">Choose location</label><br>
-        
-                                <input type="radio" id="radioButton" name="radioButton" value="ITC Gardenia">
-                                <label for="radioButton" id="labels">ITC Gardenia</label><br>  
-            
-                                <input type="radio" id="radioButton" name="radioButton" value="ITC Windsor">
-                                <label for="radioButton" id="labels">ITC Windsor</label><br>
-            
-                                <input type="radio" id="radioButton" name="radioButton" value="ITC Grand Chola">
-                                <label for="radioButton" id="labels">ITC Grand Chola</label><br><br>
-                            </div>
-        
-                            <div id="checkbox">
-                                <label for="checkbox" id="productLabel">Choose your favorite product:</label><br>
-                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                                <label for="vehicle1"> Fabbel Chocolates</label><br>
-        
-                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                                <label for="vehicle2"> Fabbel Deserts</label><br>
-        
-                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                                <label for="vehicle3"> Fabbel Snacks</label><br>
-                            </div>
-                            <input type="button" id="buttonSubmit" value="Submit" onclick="getOutput()">
-                            <div id="results">
-                                Output : 
-                            </div>
-                        </form>
-                </div>
+            <div id="Content">
+                <!--
+                    This content is a placeholder for the bakery page.
+                    It will have all the info about the bakery and history
+                    of the bakery
+                -->
+                <p id="allLabels">Content</p>
+            </div>
+
+            <div id="Video">
+                <!--
+                    This content is a placeholder for the video.
+                    It will have a video of the bakery and the process
+                    of making the chocolates
+                -->
+                <p id="allLabels">Video</p>
+            </div>
+
+            <div id="Audio">
+                <!--
+                    This content is a placeholder for the audio.
+                    It will have an audio of the bakery and the process
+                    of making the chocolates
+                -->
+                <p id="allLabels">Audio</p>
+            </div>
+
         </div>
+
+        <div id="form-box-modal">
+            <form id="form-content">
+
+                <div id="basicLabels">
+                    <label for="name" class="labels">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name Here"><br>
+
+                    <label for="email" class="labels">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email address"><br>
+
+                    <label for="number" class="labels">Number</label>
+                    <input type="number" id="number" name="number" placeholder="Mobile Number"><br>
+                </div>
+
+                <div id="dropdown">
+                    <label for="city" class="cityLabel">Choose city</label>
+                    <select name="city" id="city">
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                    </select>
+                </div>
+
+                <div id="radioButtons">
+                    <br><label for="location" class="locationLabels">Choose location</label><br>
+
+                    <input type="radio" id="location1" name="radioButton" value="ITC Gardenia">
+                    <label for="location1" class="labels">ITC Gardenia</label><br>
+
+                    <input type="radio" id="location2" name="radioButton" value="ITC Windsor">
+                    <label for="location2" class="labels">ITC Windsor</label><br>
+
+                    <input type="radio" id="location3" name="radioButton" value="ITC Grand Chola">
+                    <label for="location3" class="labels">ITC Grand Chola</label><br><br>
+                </div>
+
+                <div id="checkbox">
+                    <label for="checkbox" class="productLabel">Choose your favorite product:</label><br>
+                    <input type="checkbox" id="product1" name="vehicle1" value="Fabbel Chocolates">
+                    <label for="product1"> Fabbel Chocolates</label><br>
+
+                    <input type="checkbox" id="product2" name="vehicle2" value="Fabbel Deserts">
+                    <label for="product2"> Fabbel Deserts</label><br>
+
+                    <input type="checkbox" id="product3" name="vehicle3" value="Fabbel Snacks">
+                    <label for="product3"> Fabbel Snacks</label><br>
+                </div>
+                <button onclick="getOutput()" id="buttonSubmit">Get results</button>
+                <div id="results">
+                    Output will be displayed here:
+                </div>
+            </form>
+        </div>
+    </div>
 
 
     <footer>

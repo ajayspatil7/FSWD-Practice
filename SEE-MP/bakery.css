@@ -225,3 +225,12 @@ input[type=radio]{
     font-weight: bold;
 }
 
+
+#results{
+  border: #8cd800 2px solid;
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 300px;
+}
